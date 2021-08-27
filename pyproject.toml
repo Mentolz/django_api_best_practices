@@ -1,0 +1,83 @@
+# Example configuration for Black.
+
+# NOTE: you have to use single-quoted strings in TOML for regular expressions.
+# It's the equivalent of r-strings in Python.  Multiline strings are treated as
+# verbose regular expressions by Black.  Use [ ] to denote a significant space
+# character.
+
+[tool.poetry]
+name = "prom-webapp"
+version = "1.21.1"
+description = ""
+authors = ["Promptly Health Analytics"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+django-environ = "*"
+django-model-utils = "*"
+django-allauth = "*"
+django-crispy-forms = "*"
+django-redis = "*"
+djangorestframework = "*"
+django-countries-plus = "*"
+django-phonenumber-field = "*"
+django-webpack-loader = "*"
+django-extensions = "*"
+Django = "3.1.0"
+drf-nested-routers = "*"
+django-filter = "*"
+django-modeltrans = "*"
+django-anymail = {extras = ["mailjet"], version = "*"}
+gunicorn = "*"
+django-otp = "*"
+psycopg2-binary = "*"
+django-request-id = "*"
+django-allauth-cas = "*"
+django-versatileimagefield = "*"
+python-magic = "*"
+django-storages = "*"
+django-hashid-field = "*"
+faker = "*"
+typing-extensions = "*"
+django-defender = "*"
+python-json-logger = "*"
+django-cors-headers = "^3.7.0"
+django-deprecate-fields = "^0.1.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+pytest-django = "*"
+pdbpp = "*"
+flake8 = "*"
+coverage = "*"
+django-test-plus = "*"
+django_coverage_plugin = "*"
+factory_boy = "*"
+Sphinx = "*"
+pytest-xdist = "<2.0"
+rope = "*"
+bandit = "*"
+mypy = "*"
+pylint = "*"
+isort = "*"
+django-silk = "*"
+black = { version = "*", allow-prereleases = true }
+ipdb = "*"
+flake8-bugbear = "*"
+bump2version = "*"
+pytest-pudb = "*"
+pytest-mock = "*"
+django-stubs = "*"
+sphinx-autodoc-typehints = "*"
+pylint-django = "*"
+fabric = "*"
+pytest-clarity = "*"
+django-migration-vis = "*"
+pre-commit = "*"
+djangorestframework-stubs = "*"
+pytest-cov = "*"
+
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
